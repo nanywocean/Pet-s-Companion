@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #FDF8F4;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #FAF6F0;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #F0E6DF;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-paw {
+    background-color: #0F2C59;
+    padding: 8px;
+    border-radius: 50%;
+    color: #FF9900;
+}
+
+.nav-link.active {
+    background-color: #FF9F1C;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Container Principal */
+.container {
+    max-width: 840px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.back-link {
+    color: #666666;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Título da Página */
+.page-title-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.page-title {
+    font-size: 28px;
+    color: #1A1A1A;
+    margin-bottom: 6px;
+}
+
+.page-subtitle {
+    color: #777777;
+    font-size: 14px;
+}
+
+.mode-toggle {
+    font-size: 14px;
+    color: #555555;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.mode-toggle .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+}
+
+/* Cartão do Formulário */
+.product-form {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    border: 1px solid #F0E6DF;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    color: #222222;
+    margin-bottom: 6px;
+}
+
+.form-help {
+    color: #888888;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+/* Upload de Imagem */
+.upload-box {
+    background-color: #F8F9FA;
+    border: 1px dashed #DDE1E5;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.upload-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.img-preview {
+    width: 50px;
+    height: 50px;
+    background-color: #E9ECEF;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filename {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.filesize {
+    font-size: 12px;
+    color: #888888;
+}
+
+.btn-substitute {
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #495057;
+}
+
+/* Inputs de Texto */
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #E9ECEF;
+    background-color: #F8F9FA;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333333;
+    outline: none;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: #FF9F1C;
+    background-color: #FFFFFF;
+}
+
+/* Categorias */
+.categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.category-tag {
+    background-color: #F1F3F5;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #495057;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.category-tag.active {
+    background-color: #0F2C59;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+/* Fileiras de 2 Colunas */
+.form-row-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Preço/Estoque */
+.input-prefix-container, .input-suffix-container {
+    display: flex;
+    align-items: center;
+    background-color: #F8F9FA;
+    border: 1px solid #E9ECEF;
+    border-radius: 6px;
+}
+
+.input-prefix-container input, .input-suffix-container input {
+    border: none;
+    background: transparent;
+}
+
+.input-prefix {
+    padding-left: 16px;
+    color: #495057;
+    font-weight: 500;
+}
+
+.input-suffix {
+    padding-right: 16px;
+    color: #777777;
+    font-size: 14px;
+}
+
+.stock-hint {
+    display: block;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 6px;
+}
+
+/* Descrição */
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.char-count {
+    font-size: 12px;
+    color: #999999;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+/* Botões de Ação Inferiores */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 14px 28px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #FF9F1C;
+    color: #FFFFFF;
+}
+
+.btn-secondary {
+    background-color: #E9ECEF;
+    color: #495057;
+}
+
+/*  FOOTER (RODAPÉ) */
+.main-footer {
+    background-color: #F4EFE6;
+    padding: 40px 20px 20px 20px;
+    border-top: 1px solid #EAE5DD;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-nav h4 { 
+    margin-bottom: 10px; 
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #607274;
+}
+
+.footer-nav a:hover {
+    color: #1A3038;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    color: #888;
+}
+
+
+
+
+
+
+/* Media Queries para Responsividade (Mobile e Tablet) */
+@media (max-width: 768px) {
+    .form-row-2col {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-title-area {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .header, .footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+    }
+}

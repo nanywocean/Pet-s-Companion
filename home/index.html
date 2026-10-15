@@ -10,141 +10,118 @@
 
 <body>
 
-    <!-- CABEÇALHO -->
-    <header class="header">
-        <div class="logo">
-
-            <img src="../icones/patinha.svg" alt="logo patinha">
-            
+    <!-- HEADER / CABEÇALHO -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="../icones/patinha.svg" alt="patinha">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="🔍 Buscar rações, mimos, serviços...">
+            </div>
+            <nav class="nav-menu">
+                <a href="#">Início</a>
+                <a href="#">Produtos</a>
+                <a href="#">Login</a>
+            </nav>
+            <div class="user-profile">
+                <img src="../icones/person login.svg" alt="login">
+            </div>
         </div>
-        <input class="busca" type="text" placeholder="Buscar rações, petiscos, serviços...">
-        <nav class="menu">
-            <a href="#inicio">Início</a>
-            <a href="#produtos">Produtos</a>
-            <a href="#contato">Login</a>
-        </nav>
     </header>
 
-    <!-- SEÇÃO PRINCIPAL -->
-    <section class="hero" id="inicio">
-        <div class="hero-texto">
-            <span class="pequeno">Companheiro que gera confiança e alegria em todos<span>
-                    <h1>Cuidado premium, carinho infinito e tudo o que seu pet ama em um só lugar.</h1>
+    <!-- MAIN SECTION / INTRODUÇÃO PRINCIPAL -->
+    <main class="main-section">
+        <div class="main-container">
+            <div class="main-text">
+                <h1>Cuidado premium, carinho infinito e tudo o que seu pet ama em um só lugar.</h1>
 
-                    <div class="cards-servicos">
-                        <div class="servico">
-                            <h3>Banho e Tosa</h3>
-                            <p>Tosa higiênica e relaxante</p>
-                        </div>
-                        <div class="servico">
-                            <h3>Brinquedos &amp; Mimos</h3>
-                            <p>Estímulo cognitivo e diversão</p>
-                        </div>
-                        <div class="servico">
-                            <h3>Cosméticos Veganos</h3>
-                            <p>100% hipoalergênicos</p>
-                        </div>
-                        <div class="servico">
-                            <h3>⭐ 4.9/5.0</h3>
-                            <p>+1.800 clientes satisfeitos</p>
-                        </div>
-                    </div>
+                <div class="features-grid">
+                    <div class="feature-card"> Brinquedos e Mimos </div>
+                    <div class="feature-card"> ⭐ +750 Clientes Satisfeitos </div>
+                </div>
+            </div>
+
+            <div class="main-images">
+                <div class="img-placeholder large-img">
+                    <img src="../img/Group 3.png" alt="Banho e tosa de cachorro">
+                </div>
+                <div class="img-placeholder small-img">
+                    <img src="../img/Group 2.png" alt="Gato tomando banho">
+                </div>
+            </div>
         </div>
+    </main>
 
-        <div class="hero-imagens">
-            <img src="../img/Group 3.png" alt="Atendentes com um cachorro">
-            <img src="../img/Group 2.png" alt="Gato no banho">
-        </div>
-    </section>
-
-    <!-- PRODUTOS -->
-    <section class="produtos" id="produtos">
+    <!-- SECTION PRODUTOS -->
+    <section class="products-section">
         <h2>Produtos Selecionados para o Bem-Estar do Seu Pet</h2>
-        <p class="subtitulo">Ingredientes de alta digestibilidade, cosméticos com óleos essenciais e brinquedos
-            resistentes desenvolvidos para enriquecimento mental.</p>
+        <p class="subtitle">A higiene e saúde do seu pet são importantes. Conte conosco para encontrar os melhores
+            produtos.</p>
 
-        <div class="lista-produtos">
-
-            <div class="produto">
-                <div class="produtos_foto"></div>
-                <div class="produto-texto">
-                     <img src="../img/ração 1.png" alt="ração"> 
-                    <p class="estrelas">★★★★★ (94)</p>
+        <div class="products-grid">
+            <!-- CARD 1 -->
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="../img/ração 1.png" alt="Ração Nourish">
+                </div>
+                <div class="product-info">
+                    <span class="rating">★★★★★ (23)</span>
                     <h3>Ração Natural Super Premium
                         Crocante 2.5kg</h3>
-                        <p>Fórmula com salmão fresco, extrato de yucca e sementes
-                            ancestrais. Zero corantes ou conservantes sintéticos.</p>
-                        </div>
-                        <div class="produto-preco">
-                            <div>
-                                <small>À VISTA NO PIX</small>
-                                <strong>R$ 149,90</strong>
-                            </div>
-                            <button>🛒 Comprar</button>
-                        </div>
-                    </div>
-                    
-                    <div class="produto">
-                        <div class="produtos_foto"></div>
-                        <div class="produto-texto">
-                            <img src="../img/shampoo 1.png" alt="shampoo">    
-                            <p class="estrelas">★★★★★ (128)</p>
-                            <h3>Kit Spa Duo: Shampoo &
-                                Condicionador Nutritivo </h3>
-                                <p>Enriquecido com camomila, aveia coloidal e óleo de
-                                    argan. Pelagem sedosa, macia e com brilho acetinado.</p>
-                                </div>
-                                <div class="produto-preco">
-                                    <div>
-                                        <small>FRASCO DUO 500ML</small>
-                                        <strong>R$ 89,90</strong>
-                                    </div>
-                                    <button>🛒 Comprar</button>
-                                </div>
-                            </div>
-                            
-                            <div class="produto">
-                                <div class="produtos-foto"></div>
-                                <div class="produto-texto">
-                                    <img src="../img/brinquedos 1.png" alt="brinquedos">
-                        
-                                    <p class="estrelas">★★★★★ (52)</p>
-                                    <h3>Combo Diversão: Corda Trançada &amp; Bolinha</h3>
-                                    <p>Algodão puro atóxico e borracha natural termoplástica.
-                                        Massageia a gengiva e reduz a ansiedade de separação.</p>
-                                    </div>
-                                    <div class="produto-preco">
-                                        <div>
-                                            <small>Kit 3 peças</small>
-                                            <strong>R$ 64,50</strong>
-                                        </div>
-                                        <button>🛒 Comprar</button>
-                                    </div>
-                                </div>
-                                
-                               <div class="home_group_imgs">
+                    <p class="price">R$ 149,90</p>
+                    <button class="btn-buy">🛒 Comprar</button>
+                </div>
+            </div>
 
-                        
-                        </div>
-                           
-                        </div>
+            <!-- CARD 2 -->
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="../img/shampoo 1.png" alt="Shampoo Pet">
+                </div>
+                <div class="product-info">
+                    <span class="rating">★★★★★ (15)</span>
+                    <h3>Kit Spa Duo: Shampoo &
+                        Condicionador Nutritivo</h3>
+                    <p class="price">R$ 89,90</p>
+                    <button class="btn-buy">🛒 Comprar</button>
+                </div>
+            </div>
 
-        <a class="botao-todos" href="#">Todos os Produtos →</a>
+            <!-- CARD 3 -->
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="../img/brinquedos 1.png" alt="Brinquedos Pet">
+                </div>
+                <div class="product-info">
+                    <span class="rating">★★★★★ (42)</span>
+                    <h3>Combo Diversão: Corda Trançada & Bolinha</h3>
+                    <p class="price">R$ 64,50</p>
+                    <button class="btn-buy">🛒 Comprar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="center-btn">
+            <button class="btn-all-products">Todos os Produtos →</button>
+        </div>
     </section>
 
-    <!-- RODAPÉ -->
-    <footer class="rodape" id="contato">
-        <div>
-            <h3>🐾 Pet's Companion</h3>
-            <p>Dedicados ao bem-estar integral e mimos exclusivos para o seu pet.</p>
+    <!-- FOOTER / RODAPÉ -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>🐾 Pet's Companion</h3>
+                <p>Dedicados ao bem-estar e alegria do seu companheiro de quatro patas.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navegação</h4>
+                <a href="#">Início</a>
+                <a href="#">Produtos</a>
+                <a href="#">Contato</a>
+            </div>
         </div>
-        <p>© 2026 Pet's Companion Ltda. Todos os direitos reservados.</p>
-        <div>
-            <h4>Navegação</h4>
-            <a href="#inicio">Início</a><br>
-            <a href="#produtos">Produtos</a><br>
-            <a href="#contato">Contato</a>
-        </div>
+        <p class="copyright">&copy; 2026 Pet's Companion. Todos os direitos reservados.</p>
     </footer>
 
 </body>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet's Companion - Cadastro de Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="logo">
+            <!-- <span class="icon-paw">🐾</span> -->
+             <img src="../icones/patinha.svg" alt="logo">
+            <strong>Pet's Companion</strong>
+        </div>
+        <nav class="nav">
+            <a href="#" class="nav-link active">Produtos</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <a href="#" class="back-link">&larr; Voltar para Produtos</a>
+        
+        <div class="page-title-area">
+            <div>
+                <h1 class="page-title">Novo Produto</h1>
+                <p class="page-subtitle">Preencha as informações básicas para publicar na vitrine da loja.</p>
+            </div>
+            <div class="mode-toggle">
+                <span class="dot"></span> Modo Rápido
+            </div>
+        </div>
+
+        <!-- Formulário -->
+        <form class="product-form">
+            
+            <!-- Fotografia do Produto -->
+            <div class="form-group">
+                <label class="form-label">Fotografia do Produto</label>
+                <p class="form-help">Arraste a imagem principal destacada em fundo neutro ou claro.</p>
+                <div class="upload-box">
+                    <div class="upload-info">
+                        <div class="img-preview">
+
+                            <span style="font-size: 20px;">🪢</span>
+
+                            
+
+
+                        </div>
+                        <div>
+                            <p class="filename">img.jpg</p>
+                            <p class="filesize">1.4 MB • Pronto para upload</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-substitute">📋 Substituir</button>
+                </div>
+            </div>
+
+            <!-- Nome do Produto -->
+            <div class="form-group">
+                <label for="product-name" class="form-label">Nome do Produto</label>
+                <input type="text" id="product-name" class="form-input" value="Combo Diversão: Corda Trançada & Bolinha">
+            </div>
+
+            <!-- Categoria Principal -->
+            <div class="form-group">
+                <label class="form-label">Categoria Principal</label>
+                <div class="categories-grid">
+                    <button type="button" class="category-tag active">Brinquedos</button>
+                    <button type="button" class="category-tag">Higiene</button>
+                    <button type="button" class="category-tag">Alimentação & Petiscos</button>
+                    <button type="button" class="category-tag">Conforto & Camas</button>
+                </div>
+            </div>
+
+            <!-- Preço e Estoque -->
+            <div class="form-row-2col">
+                <div class="form-group">
+                    <label for="price" class="form-label">Preço de Venda</label>
+                    <div class="input-prefix-container">
+                        <span class="input-prefix">R$</span>
+                        <input type="text" id="price" class="form-input" value="64,50">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="stock" class="form-label">Estoque Inicial</label>
+                    <div class="input-suffix-container">
+                        <input type="number" id="stock" class="form-input" value="35">
+                        <span class="input-suffix">unidades</span>
+                    </div>
+                    <span class="stock-hint">Disponibilidade imediata na loja</span>
+                </div>
+            </div>
+
+            <!-- Descrição -->
+            <div class="form-group">
+                <div class="label-row">
+                    <label for="description" class="form-label">Descrição do Produto</label>
+                    <span class="char-count">104 caracteres</span>
+                </div>
+                <textarea id="description" class="form-textarea" rows="4">Algodão puro atóxico e borracha natural termoplástica. Massageia a gengiva e reduz a ansiedade de separação.</textarea>
+            </div>
+
+        </form>
+
+        <!-- Ações do Formulário -->
+        <div class="form-actions">
+            <button type="button" class="btn-secondary">Salvar como Rascunho</button>
+            <button type="submit" class="btn-primary">✓ Publicar Produto</button>
+        </div>
+    </main>
+
+     <!-- FOOTER / RODAPÉ -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>🐾 Pet's Companion</h3>
+                <p>Dedicados ao bem-estar e alegria do seu companheiro de quatro patas.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navegação</h4>
+                <a href="#">Início</a>
+                <a href="#">Produtos</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Pet's Companion. Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+</html>
